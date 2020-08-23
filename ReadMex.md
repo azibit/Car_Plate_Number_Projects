@@ -25,3 +25,5 @@ data
 
 We move 142 files from the images folder into the train2017, 20 files into the test2017 and also 20 files into the val2017 folder.
 
+
+
