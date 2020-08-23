@@ -25,3 +25,26 @@ data
 
 We move 142 files from the images folder into the train2017, 20 files into the test2017 and also 20 files into the val2017 folder.
 
+## Section 2: Create Annotation Files
+Then we have a python script that combines each of the annotations for each folder into a single annotation file. The python script is titled labelme2coco.py
+
+Run the labelme2coco.py for each of the train2017, test2017 and val2017 folders. Ensure labelme is installed before running the commands
+
+For train2017
+```
+python labelme2coco.py train2017
+```
+It creates a file named trainval.json, rename the file as instances_train2017.json, then put the file in the annotations folder
+
+For test2017
+```
+python labelme2coco.py test2017
+```
+It creates a file named trainval.json, rename the file as instances_test2017.json, then put the file in the annotations folder
+
+For val2017
+```
+python labelme2coco.py val2017
+```
+It creates a file named trainval.json, rename the file as instances_val2017.json, then put the file in the annotations folder
+
