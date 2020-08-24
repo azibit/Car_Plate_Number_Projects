@@ -6,7 +6,7 @@ An Object Detection project to detect plate numbers for cars in an image
 
 The following steps are needed to create a dataset for training and testing a Object Detection Model in MMDetection
 
-## Step 1: Create the dataset folder structure
+## Section 1: Create the dataset folder structure
 
 For this project, the files in the images directory are what we would be using to create the images in the train, test and valid dataset directory.
 
@@ -47,4 +47,11 @@ For val2017
 python labelme2coco.py val2017
 ```
 It creates a file named trainval.json, rename the file as instances_val2017.json, then put the file in the annotations folder
+
+## Section 3: Download and setup MMDetection
+The framework MMDetection would be used for this project. We download MMDetection as follows:
+```
+git clone https://github.com/open-mmlab/mmdetection.git
+```
+
 
